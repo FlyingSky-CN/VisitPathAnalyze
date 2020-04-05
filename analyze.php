@@ -20,7 +20,7 @@ if (file_exists(DIR_app.'/'.$argv[2].'.php')):
     require DIR_app.'/'.$argv[2].'.php';
     exit();
 endif; else:
-    exit('usage: php analyze.php run <program> [<argv>]'."\n");
+    exit('usage: analyze run <program> [<argv>]'."\n");
 endif;
 
 exit('Unknown command.'."\n");
