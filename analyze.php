@@ -7,6 +7,8 @@
 
 if (count(isset($argv) ? $argv : []) < 1) exit('Unsupported method.'."\n");
 
+define('VPA', true);
+
 define('DIR_app'   , __DIR__.'/app'   );
 define('DIR_config', __DIR__.'/config');
 define('DIR_logs'  , __DIR__.'/logs'  );
