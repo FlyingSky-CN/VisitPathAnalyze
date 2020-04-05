@@ -15,9 +15,12 @@ define('DIR_source', __DIR__.'/source');
 
 if (count($argv) == 1) exit('Manual WIP.'."\n"); //TODO
 
-if (file_exists(DIR_app.'/'.$argv[1].'.php')):
-    require DIR_app.'/'.$argv[1].'.php';
+if ($argv[1] == 'run' ) if (isset($argv[2])):
+if (file_exists(DIR_app.'/'.$argv[2].'.php')):
+    require DIR_app.'/'.$argv[2].'.php';
     exit();
+endif; else:
+    exit('usage: php analyze.php run <program> [<argv>]'."\n");
 endif;
 
 exit('Unknown command.'."\n");
