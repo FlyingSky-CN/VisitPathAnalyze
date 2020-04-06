@@ -25,6 +25,14 @@ endif; else:
     exit('usage: analyze run <program> [<argv>]'."\n");
 endif;
 
+if ($argv[1] == 'charts') if (isset($argv[2])):
+if (file_exists(DIR_app.'/charts/'.$argv[2].'.php')):
+    require DIR_app.'/charts/'.$argv[2].'.php';
+    exit();
+endif; else:
+    exit('usage: analyze charts <module> [<argv>]'."\n");
+endif;
+
 if ($argv[1] == 'init'):
     function checkdir($dir, $name) {
         if (!is_dir($dir)) if (mkdir($dir)) {
