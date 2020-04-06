@@ -1,6 +1,6 @@
 <?php if (!defined('VPA')) exit('Unsupported method.'."\n");
 /**
- * Visit Path Analyze | all2one
+ * Visit Path Analyze | groupby
  * 将日志按指定键名分组
  * 
  * @author FlyingSky-CN
