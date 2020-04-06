@@ -6,9 +6,9 @@
 
 使用 `php analyze.php run <program> [<argv>]` 来运行一些工具。
 
-- `all2one` - 将 `logs` 下所有日志汇总到一个文件中。
-- `groupby` - 将输入文件按照按指定键名分组保存。
-- `counter` - 将输入的分组日志文件计数并保存。
+- `all2one` 将 `logs` 下所有日志汇总到一个文件中。
+- `groupby` 将输入文件按照按指定键名分组保存。
+- `counter` 将输入的分组日志文件计数并保存。
 
 ## 📦 DIR
 
