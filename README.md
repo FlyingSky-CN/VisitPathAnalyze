@@ -19,6 +19,7 @@
 使用 `php analyze.php charts <module> [<argv>]` 来生成一些图表。
 
 - `echarts-bar-1`
+- `echarts-pie-1`
 
 ## 📦 DIR
 
