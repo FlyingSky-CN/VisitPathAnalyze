@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+<head><meta charset="utf-8"></head>
+<body style="height: 100%; margin: 0">
+    <div id="container" style="height: 100%"></div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+    <script type="text/javascript">
+        var dom = document.getElementById("container");
+        var myChart = echarts.init(dom);
+        var app = {};
+        var xAxisData = [[axis]];
+        var data = [[data]];
+
+        option = {
+            title: {
+                text: '{{title}}'
+            },
+            legend: {
+                data: ['bar', 'bar2']
+            },
+            toolbox: {
+                feature: {
+                    magicType: {
+                        type: ['stack', 'tiled']
+                    },
+                    dataView: {},
+                    saveAsImage: {
+                        pixelRatio: 2
+                    }
+                }
+            },
+            tooltip: {},
+            xAxis: {
+                data: xAxisData,
+                splitLine: {
+                    show: false
+                }
+            },
+            yAxis: {
+            },
+            series: [{
+                name: 'data',
+                type: 'bar',
+                data: data,
+                animationDelay: function (idx) {
+                    return idx * 10;
+                }
+            }],
+            animationEasing: 'elasticOut',
+            animationDelayUpdate: function (idx) {
+                return idx * 5;
+            }
+        };;
+        myChart.setOption(option, true);
+    </script>
+</body>
+</html>
