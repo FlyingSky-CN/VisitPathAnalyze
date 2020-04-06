@@ -2,6 +2,10 @@
 
 一个分析访问路径日志的程序
 
+## 🔌 Initialize
+
+使用 `php analyze.php init` 可以初始化运行所需目录防止错误。
+
 ## 📐 Tools
 
 使用 `php analyze.php run <program> [<argv>]` 来运行一些工具。
